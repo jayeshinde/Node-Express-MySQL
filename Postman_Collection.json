@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "6f9a3d09-4711-4e24-a8c5-01c140e27310",
+		"name": "Node Demo Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Employee details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				},
+				"description": "Get Employee Details"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee details by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"1"
+					]
+				},
+				"description": "Get Employee Details"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete emplyoee details",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"5"
+					]
+				},
+				"description": "Get Employee Details"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Kumar",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Shirish",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+919021960082",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rohit.indalkar@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "BR softtech pvt ltd",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "full stack developer",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				},
+				"description": "Get Employee Details"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee details",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "organization",
+							"value": "Compucom systems pvt ltd",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "Senior full stack developer",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Rohit",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Indalkar",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+91 9021960083",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rohit.indalkar@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"1"
+					]
+				},
+				"description": "Get Employee Details"
+			},
+			"response": []
+		},
+		{
+			"name": "Update specific field of employee",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "organization",
+							"value": "Kohler systems pvt ltd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"1"
+					]
+				},
+				"description": "Get Employee Details"
+			},
+			"response": []
+		}
+	]
+}
